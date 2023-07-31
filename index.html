@@ -14,6 +14,8 @@
    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
    <link href="assets/css/magicscroll.css" rel="stylesheet" type="text/css" media="screen" />
    <link rel="stylesheet" href="assets/css/style.css">
+       <script src="https://www.youtube.com/iframe_api"></script>
+
 </head>
 
 <body>
@@ -21,9 +23,7 @@
    <div id="main-1">
       <header>
          <div class="header-home-1">
-            <video loop="loop" autoplay muted src="assets/images/mariner-cover(2).mp4" width="1920" height="1080">
-               <source type="video/mp4" src="assets/images/mariner-cover(2).mp4">
-            </video>
+    <div id="player"></div>
             <div class="header-cont">
                <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Our experience<br>
                   your story
@@ -570,4 +570,27 @@
    <script src="assets/js/tilt.jquery.min.js"></script>
 </body>
 
+<script>
+        // Replace 'YOUR_YOUTUBE_API_KEY' and 'YOUR_YOUTUBE_VIDEO_ID' with your API key and video ID respectively.
+        var videoID = 'HdNmVVUgWYI';
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                videoId: videoID,
+                playerVars: {
+                    'rel': 0,
+                    'showinfo': 0,
+                    'autoplay': 1,
+                    'controls': 0,
+                    'loop':1,
+                    'mute':1,
+                    'playlist':videoID,
+                    'allowfullscreen': 1
+                }
+            });
+        }
+    </script>
 </html>
