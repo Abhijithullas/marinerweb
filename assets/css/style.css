@@ -3960,9 +3960,10 @@ div.container-fluid .y-arrow_line img {
 .servicebox {
 	background: #e6f0f6;
 	padding: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	border-radius: 5px;
-	position: relative
+	position: relative;
+	height: 100%;
 }
 
 .servicebox-row>div:nth-child(1) .servicebox {
@@ -3988,7 +3989,12 @@ div.container-fluid .y-arrow_line img {
 .servicebox-row>div:nth-child(6) .servicebox {
 	background: #effafb
 }
-
+.servicebox-row>div:nth-child(7) .servicebox {
+	background: #e9fdff
+}
+.servicebox-row>div:nth-child(8) .servicebox {
+	background: #f2ebe7
+}
 .servicebox img {
 	max-height: 45px;
 	position: relative;
@@ -4012,7 +4018,7 @@ div.container-fluid .y-arrow_line img {
 }
 
 .servicebox:hover h4 {
-	top: -45px;
+	top: -30px;
 	transition: all .3s .2s
 }
 
@@ -9582,8 +9588,8 @@ div.container .y-arrow_line i:hover {
 }
 
 .single-yacht .item img {
-	max-height: 100vh;
-	object-fit: cover
+	max-height: 50vh;
+	object-fit: cover;
 }
 
 .hi-single-yacht .header-cont {
