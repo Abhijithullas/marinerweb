@@ -3619,6 +3619,17 @@ body.home-3 .h-address li {
 	padding-bottom: 1px;
 	background-blend-mode: multiply
 }
+.header-inner-about {
+	min-height: 0;
+	background: url(../../media/images/about.jpg), linear-gradient(108deg, #001a30, rgba(0, 0, 0, 0)) no-repeat;
+	padding-top: 10rem;
+	color: #fff;
+	background-size: cover;
+	background-position: center bottom;
+	margin-bottom: 4rem;
+	padding-bottom: 1px;
+	background-blend-mode: multiply
+}
 
 .header-inner .y-breadcrum ul {
 	background: 0 0
